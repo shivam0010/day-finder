@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<title>Day Finder By Shivam Singh</title>
+				<style>
+								* {
+	margin: 0;
+	padding: 8px;
+	outline: none;
+	font-weight: 700;
+}
+
+body {
+	background-color: #000;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1633%26quot%3b)' fill='none'%3e%3ccircle r='55.445' cx='753.17' cy='225.2' fill='url(%23SvgjsLinearGradient1634)'%3e%3c/circle%3e%3ccircle r='32.015' cx='201.85' cy='513.5' fill='url(%23SvgjsLinearGradient1635)'%3e%3c/circle%3e%3ccircle r='48.125' cx='533.33' cy='431.61' fill='url(%23SvgjsLinearGradient1636)'%3e%3c/circle%3e%3ccircle r='38.255' cx='568.94' cy='468.84' fill='url(%23SvgjsLinearGradient1637)'%3e%3c/circle%3e%3ccircle r='28.09' cx='827.57' cy='180.75' fill='url(%23SvgjsLinearGradient1638)'%3e%3c/circle%3e%3ccircle r='42.635' cx='1153.1' cy='95.33' fill='url(%23SvgjsLinearGradient1639)'%3e%3c/circle%3e%3ccircle r='32.415' cx='198.11' cy='140.15' fill='url(%23SvgjsLinearGradient1640)'%3e%3c/circle%3e%3ccircle r='36.305' cx='540.93' cy='124.05' fill='url(%23SvgjsLinearGradient1641)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1633'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='642.28' y1='225.2' x2='864.06' y2='225.2' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1634'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='137.82' y1='513.5' x2='265.88' y2='513.5' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1635'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(51%2c 50%2c 108%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='437.08000000000004' y1='431.61' x2='629.58' y2='431.61' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1636'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='492.43000000000006' y1='468.84' x2='645.45' y2='468.84' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1637'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='771.3900000000001' y1='180.75' x2='883.7500000000001' y2='180.75' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1638'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1067.83' y1='95.33' x2='1238.37' y2='95.33' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1639'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='133.28000000000003' y1='140.15' x2='262.94000000000005' y2='140.15' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1640'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='468.31999999999994' y1='124.05' x2='613.54' y2='124.05' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1641'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+h1{
+				color:#5cdb95;
+}
+
+.main {
+	height: 500px;
+	width:750px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 60px;
+	padding: 15px;
+  box-shadow:
+						20px 20px 50px rgba(127, 255, 0, 0.6),
+						-20px -20px 50px rgba(127, 255, 0, .6);
+
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255,0.1);
+	//background: transparent;
+}
+
+.hd h1{
+				color:#00ffff;
+				margin:0px 130px auto;
+				//border:1px solid red;
+}
+
+.mb-3{
+				//border:2px solid green;
+				border-top-right-radius:50px;
+				border-top-left-radius:20px;
+				border-bottom-right-radius:50px;
+				border-bottom-left-radius:20px;
+				background-color:rgba(64,224,208,0.1);
+				display:flex;
+				margin:40px auto;
+				font-size:25px;
+				width:110%;
+				color:#fff;
+}
+
+#day{
+background:transparent;
+				margin:auto 30px;
+				border:2px inset #ff407e;
+				font-style:bold;
+				color:#fff;
+}
+
+#month{
+background:transparent;
+				margin:auto 45px;
+				border:2px inset #ff407e;
+				font-style:bold;
+				color:#fff;
+				
+}
+
+#year{
+background:transparent;
+				margin:auto 135px;
+				border:2px inset #ff407e;
+				font-style:bold;
+				color:#fff;
+}
+
+#ft{
+				margin:0px -100px;
+}
+
+#button {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #212121;
+ color: #ae00ff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 15px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 20px;
+ cursor: pointer;
+ font-weight: bold;
+ margin:0px 300px;
+}
+
+#button:hover {
+ box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+ transition-delay: 0.6s;
+}
+
+#button span {
+ position: absolute;
+}
+
+#button span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+#button:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+#button span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+#button:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+#button span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+#button:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+#button span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+#button:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+#button:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #ae00af, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+ transition: 0.1s;
+}
+
+#button:active span:nth-child(1) 
+span:nth-child(2) 
+span:nth-child(2) 
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+
+
+				</style>
+</head>
+<body>
+				<center><h1>Get Any Day Through The Date</h1></center>
+				<div class="main">
+	
+	<span class="hd">
+		<h1 id="heading">Get weekday putting the date</h1>
+	</span>
+	
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Enter the date</label>
+			
+			<input type="number" class="form-control" id="day" aria-describedby="emailHelp">
+			
+			<div class="form-text">Numeric values</div>
+		</div>
+		
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Enter month</label>
+			<input type="number" class="form-control" id="month">
+			<div class="form-text">Numeric values</div>
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Year</label>
+			<input type="number" class="form-control" id="year" aria-describedby="emailHelp">
+			<div class="form-text" id="ft">Four digits required</div>
+		</div>
+		<button id="button" class="btn btn-secondary">Submit</button>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		//     select elements
+		var day = document.getElementById("day");
+		var month = document.getElementById("month");
+		var year = document.getElementById("year");
+		var inputs = document.querySelectorAll("input");
+		var formText = document.querySelectorAll(".form-text");
+		//     main function,  includes Date() methods & for-of loop
+		var getYourDay = () => {
+			var newDate = new Date(`${year.value} ${month.value} ${day.value}`);
+			var res = newDate.toLocaleDateString([], { weekday: 'long' });
+			for (let item of inputs) {
+				if (!item.value) {
+					heading.textContent = ""
+					for (let form of formText) {
+						form.textContent = "Please fill this input..!"
+						form.style.color = "red"
+					}
+				} else {
+					heading.innerText = "It is "+res+"!"
+					heading.style.color = "#95ffe0"
+					for (let form of formText) {
+						form.textContent = ""
+						form.style.color = "black"
+					}
+				}
+			}
+		}
+		button.addEventListener("click", getYourDay);
+	</script>
+</body>
+</html>
